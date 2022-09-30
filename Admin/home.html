@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <!-- page preloader -->
+    <div id="loading-area">
+        <div class="loader-col">
+            <div class="loader" id="loader"></div>
+        </div>
+    </div>
+    <!-- end loading -->
+
+    <!-----:::::::::::::::::::::-main-::::::::::::::::::::::::----->
+    <div class="dashboard-wrap">
+        <!-----:::::::::::::::::::::side bar left::::::::::::::::::::::::----->
+        <!-- side bar left -->
+        <div class="bodyClick"></div>
+        <!--==============-side bar menu-===========-->
+        <div class="S-Sidebar-left">
+            <!-- logo and name -->
+            <div class="S-logo-wrap">
+                <div class="S-logo">
+                    <a href="#">
+                        <img src="https://images.hdqwalls.com/download/hood-boy-skyscraper-neon-lights-4k-h4-320x240.jpg"
+                            alt="profileImg" />
+                        <a href="#">
+                            <h5>Nils Barrios</h5>
+                        </a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="S-Nav-menu">
+                <ul class="menu-links">
+                    <li class="menu-li active" active>
+                        <h3>
+                            <a href="home.html"><i class="bx bxs-dashboard"></i></a>
+                            <a href="home.html">
+                                <h4>Dashboard</h4>
+                            </a>
+                        </h3>
+                    </li>
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bxs-user-account"></i> </a>
+                            <a href="#">
+                                <h4>Mi cuenta</h4>
+                            </a>
+                        </h3>
+                    </li>
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bxs-store-alt"></i></a>
+                            <a href="#">
+                                <h4>Productos</h4>
+                            </a>
+                        </h3>
+                    </li>
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bx-data"></i></a>
+                            <a href="#">
+                                <h4>Combinaciones</h4>
+                            </a>
+                        </h3>
+                    </li>
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bx-duplicate"></i></a>
+                            <a href="#">
+                                <h4>Operadores</h4>
+                            </a>
+                        </h3>
+                    </li>
+
+
+                    <!-- expand down -->
+                    <li class="menu-li plus-sub" id="click-li">
+                        <div class="Sub-S-wrap">
+                            <h3>
+                                <a href="#"><i class="bx bxs-receipt"></i></a>
+                                <a href="#">
+                                    <h4>Suscripcion</h4>
+                                </a>
+                            </h3>
+                            <span class="up-down-arrow" id="plus-sub">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+                        <div class="S-sub-menu" id="S-sub-menu">
+                            <ul>
+                                <li><a href="#">Realizer pago</a></li>
+                                <li><a href="#">Historico de pago</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bxs-report"></i></a>
+                            <a href="#">
+                                <h4>Reportes</h4>
+                            </a>
+                        </h3>
+                    </li>
+
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bx-briefcase"></i></a>
+                            <a href="#">
+                                <h4>Reporte Varios</h4>
+                            </a>
+                        </h3>
+                    </li>
+                    <!--  -->
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bx-dish"></i></a>
+                            <a href="#">
+                                <h4>Tasa</h4>
+                            </a>
+                        </h3>
+                    </li>
+                    <li class="menu-li">
+                        <h3>
+                            <a href="#"><i class="bx bxs-help-circle"></i></a>
+                            <a href="#">
+                                <h4>Soporte y Ayuda</h4>
+                            </a>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-----::::::::::::::::::::: main content ::::::::::::::::::::::::----->
+
+        <section class="main-content-section">
+            <!--===== nav content ====-->
+            <nav class="S-nav">
+                <div class="S-nav-left">
+                    <div class="S-hambargur hambergurOne" id="hambergurOne">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                </div>
+                <!---=======notification mobile area=====--->
+                <ul class="nav-icons secondary-ul" id="S_arrays">
+                    <li id="see_notif-Sm" class="see_notif-Sm" onclick="myfunFive()">
+                        <a><i class="fa-solid fa-bell"></i></a>
+                        <!---===========notification count========---->
+                        <span class="n_count" id="notification">2</span>
+
+                        <!--======Dropdown notification=======-->
+                        <div class="notif-box">
+                            <div class="notification__header">
+                                <h3>Notification</h3>
+                            </div>
+                            <!--=======-Notfication-list-======-->
+                            <div class="notifi__content">
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="go-next">
+                                <a href="notification.html">See All
+                                    <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="see_notif-Sm" class="see_notif-Sm" onclick="myfunSix()">
+                        <a><i class="fa-solid fa-burger"></i></a>
+                        <!---===========notification count========---->
+                        <span class="n_count" id="cart">5</span>
+                        <!--======Dropdown notification cart=======-->
+                        <div class="notif-box">
+                            <div class="notification__header">
+                                <h3>Cart</h3>
+                            </div>
+                            <div class="notifi__content">
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="go-next">
+                                <a href="#">See All
+                                    <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="see_notif-Sm" class="see_notif-Sm" onclick="myfunSeven()">
+                        <a><i class="fa-solid fa-house-user"></i></a>
+                        <!---===========notification count========---->
+                        <span class="n_count" id="home">8</span>
+
+                        <!--======Dropdown notification home=======-->
+                        <div class="notif-box">
+                            <div class="notification__header">
+                                <h3>Home</h3>
+                            </div>
+                            <div class="notifi__content">
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                    <div class="notifi__feature_img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="go-next">
+                                <a href="#">See All
+                                    <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="see_notif-Sm" class="see_notif-Sm" onclick="myfunEight()">
+                        <a><i class="fa-solid fa-envelope"></i></a>
+                        <!---===========notification count========---->
+                        <span class="n_count" id="message">10</span>
+
+                        <!--======Dropdown notification message=======-->
+                        <div class="notif-box">
+                            <div class="notification__header">
+                                <h3>Message</h3>
+                            </div>
+                            <!--=======-Notfication-list-======-->
+                            <div class="notifi__content">
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="notifi__list">
+                                    <div class="notifi__img">
+                                        <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="notifi__detail">
+                                        <h3><b>John doe</b>
+                                            reacted to your post
+                                        </h3>
+                                        <p>
+                                            <small>10 mins age</small>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="go-next">
+                                <a href="#">See All
+                                    <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- nav-middle -->
+                <div class="S-search-box">
+                    <form action="search" class="search-box">
+                        <input type="search" class="s-search" id="search" placeholder="Buscar..." />
+                        <button type="submit" class="S-search-btn">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- nav-right -->
+                <div class="nav-right">
+                    <!---=======notification destop area=====--->
+                    <ul class="nav-icons main-ul" id="S_arrays">
+                        <li id="see_notif" class="see_notif" onclick="myfunOne()">
+                            <a><i class="fa-solid fa-bell"></i></a>
+                            <!---===========notification count========---->
+                            <span class="n_count" id="notification">2</span>
+                            <!--======Dropdown notification=======-->
+                            <div class="notif-box">
+                                <div class="notification__header">
+                                    <h3>Notification</h3>
+                                </div>
+                                <!--=======-Notfication-list-======-->
+                                <div class="notifi__content">
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="go-next">
+                                    <a href="notification.html">See All
+                                        <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="see_notif" class="see_notif" onclick="myfunTwo()">
+                            <a><i class="fa-solid fa-burger"></i></a>
+                            <!---===========notification count========---->
+                            <span class="n_count" id="cart">5</span>
+
+                            <!--======Dropdown notification cart=======-->
+                            <div class="notif-box">
+                                <div class="notification__header">
+                                    <h3>Cart</h3>
+                                </div>
+                                <div class="notifi__content">
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="go-next">
+                                    <a href="#">See All
+                                        <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="see_notif" class="see_notif" onclick="myfunThree()">
+                            <a><i class="fa-solid fa-house-user"></i></a>
+                            <!---===========notification count========---->
+                            <span class="n_count" id="home">8</span>
+
+                            <!--======Dropdown notification home=======-->
+                            <div class="notif-box">
+                                <div class="notification__header">
+                                    <h3>Home</h3>
+                                </div>
+                                <div class="notifi__content">
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                        <div class="notifi__feature_img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="go-next">
+                                    <a href="#">See All
+                                        <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="see_notif" class="see_notif" onclick="myfunFour()">
+                            <a><i class="fa-solid fa-envelope"></i></a>
+                            <!---===========notification count========---->
+                            <span class="n_count" id="message">10</span>
+
+                            <!--======Dropdown notification message=======-->
+                            <div class="notif-box">
+                                <div class="notification__header">
+                                    <h3>Message</h3>
+                                </div>
+                                <!--=======-Notfication-list-======-->
+                                <div class="notifi__content">
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="notifi__list">
+                                        <div class="notifi__img">
+                                            <img src="https://images.hdqwalls.com/download/pubg-madgala-5k-s2-1280x800.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="notifi__detail">
+                                            <h3><b>John doe</b>
+                                                reacted to your post
+                                            </h3>
+                                            <p>
+                                                <small>10 mins age</small>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="go-next">
+                                    <a href="#">See All
+                                        <span><i class="fa-solid fa-arrow-right pl-2"></i></span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- S-right-prof -->
+                    <div class="S-right-prof">
+                        <a class="prof-cntnt-btn"><img
+                                src="https://images.hdqwalls.com/download/hood-boy-skyscraper-neon-lights-4k-h4-320x240.jpg"
+                                alt="profileImg" /></a>
+
+                        <!-- click-content -->
+                        <div class="click-content" id="click-content-two">
+                            <div class="S-Click-img m-0 px-3">
+                                <a href="#" class="S-btn d-flex align-items-center">
+                                    <img src="https://images.hdqwalls.com/download/hood-boy-skyscraper-neon-lights-4k-h4-320x240.jpg"
+                                        alt="profileImg" />
+                                </a>
+                                <div class="name-and-email">
+                                    <h4><a href="#">Nils Barrios</a></h4>
+                                    <h4><a href="#">ClientEmail@gmail.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="S-person S-prof px-3">
+                                <a href="#" class="d-flex align-items-center py-3">
+                                    <span class="cntnt-icon">
+                                        <i class="fa-solid fa-circle-user"></i>
+                                    </span>
+                                    <h5 class="pl-3">Mi quenta</h5>
+                                </a>
+                            </div>
+                            <div class="S-person S-prev px-3">
+                                <a href="#" class="d-flex align-items-center py-3">
+                                    <span class="cntnt-icon"><i
+                                            class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i></span>
+                                    <h5 class="pl-3">Carrer Secion</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+
+        </section>
+    </div>
+
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
